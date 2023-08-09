@@ -1,19 +1,23 @@
 package com.zizhuo.selfweb.controller;
 
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@Controller
-@RequestMapping("/user")
-public class UserController {
+import javax.annotation.Resource;
 
-    @RequestMapping("/login")
-    public String Login(){
-        return "login.html";
-    }
+@Controller
+@RequestMapping("/test")
+public class TestController {
 
     @RequestMapping("/index")
-    public String Index(){
+    public String index(){
         return "index.html";
+    }
+
+
+    @RequestMapping("/login")
+    public String login(){
+        return "login.html";
     }
 }
